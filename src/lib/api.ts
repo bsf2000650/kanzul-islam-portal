@@ -1,5 +1,5 @@
 import axios, { type AxiosError, type InternalAxiosRequestConfig } from "axios"
-const SERVER_API_URL:string = 'https://kanzul-islam-server.vercel.app/'
+const SERVER_API_URL:string = 'https://kanzul-islam-server.vercel.app/api/v1'
 
 const BASE = SERVER_API_URL as string  ?? "http://localhost:5000/api/v1"
 export const API_ORIGIN = BASE.replace(/\/api\/v\d+\/?$/, "")
