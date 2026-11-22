@@ -1,6 +1,7 @@
 import axios, { type AxiosError, type InternalAxiosRequestConfig } from "axios"
+const SERVER_API_URL:string = 'https://kanzul-islam-server.vercel.app/'
 
-const BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? "http://localhost:5000/api/v1"
+const BASE = SERVER_API_URL as string  ?? "http://localhost:5000/api/v1"
 export const API_ORIGIN = BASE.replace(/\/api\/v\d+\/?$/, "")
 
 /** Turn a stored image path ("/uploads/x.jpg") into a full URL. */
